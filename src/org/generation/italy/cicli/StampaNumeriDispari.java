@@ -19,12 +19,15 @@ public class StampaNumeriDispari {
 		
 		int lunghezza = scanner.nextInt();
 		
-		System.out.println("Creo un array con " + lunghezza + " n naturali");
+		System.out.println("Creo un array con " + lunghezza + " n naturali, di cui stampo i dispari");
 		int[] n = new int[lunghezza];
 		
 		for(int i = 0; i < n.length; i++) {
 			n[i] = randomGenerator.nextInt(99);
-			System.out.print(n[i] + " ");	
+			
+			if(n[i] % 2 != 0){
+				System.out.print(n[i] + " ");	
+			} 
 		
 		}
 		
