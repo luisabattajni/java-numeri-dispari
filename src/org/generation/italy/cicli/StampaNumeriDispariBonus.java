@@ -28,31 +28,43 @@ public class StampaNumeriDispariBonus {
 		
 		int nNDispari = 0;
 		int nNPari = 0;
+		int somma = 0;
 		
-		for(int i = 0; i < n.length; i++) {
+		for (int i = 0; i < n.length; i++) {
 			n[i] = randomGenerator.nextInt(100);
 			
-			if(n[i] % 2 != 0) {
+			if (n[i] % 2 != 0) {
 				nNDispari++;
-				} else if(n[i] % 2 == 0) {
-					nNPari++;
-				}
-			
-			if(n[i] % 2 != 0){
-				System.out.print(n[i] + " ");
+			} else if(n[i] % 2 == 0) {
+				nNPari++;
+			}
 				
+			
+			if (n[i] % 2 != 0) {
+				System.out.print(n[i] + " ");
 				
 			} 
 			
 			
+			if (n[i] > 10 && n[i] < 50) {
+				somma = somma + n[i];
+			}
 
 			
-			System.out.println("numeri dispari: " + nNDispari);
-			System.out.println("numeri pari: " + nNPari);
+			
+		
+
+			
+			
 
 		
 		}
 		
+		System.out.println("\nnumeri dispari: " + nNDispari);
+		System.out.println("\nnumeri pari: " + nNPari);
+		System.out.println("\nSomma: " + somma);
+		
+	
 		
 		
 		
