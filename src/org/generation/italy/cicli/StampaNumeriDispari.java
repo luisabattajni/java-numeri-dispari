@@ -1,0 +1,45 @@
+package org.generation.italy.cicli;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class StampaNumeriDispari {
+
+	public static void main(String[] args) {
+		/*
+		 * array lunghezza n (con scanner)
+		 * ^ numeri int RANDOM tra 0 e 99
+		 * Scorrere array + sysout SOLO n dispari
+		 */
+		
+		System.out.println("Lunghezza dell'array: ");
+		// init Scanner + random
+		Scanner scanner = new Scanner(System.in);
+		Random randomGenerator = new Random();
+		
+		int lunghezza = scanner.nextInt();
+		
+		System.out.println("Creo un array con " + lunghezza + " n naturali");
+		int[] n = new int[lunghezza];
+		
+		for(int i = 0; i < n.length; i++) {
+			n[i] = randomGenerator.nextInt(99);
+			System.out.print(n[i] + " ");	
+		
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//close Scanner
+		scanner.close();
+
+	}
+
+}
