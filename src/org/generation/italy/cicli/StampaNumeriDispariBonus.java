@@ -3,7 +3,7 @@ package org.generation.italy.cicli;
 import java.util.Scanner;
 import java.util.Random;
 
-public class StampaNumeriDispari {
+public class StampaNumeriDispariBonus {
 
 	public static void main(String[] args) {
 		/*
